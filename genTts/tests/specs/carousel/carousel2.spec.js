@@ -1,4 +1,4 @@
-import TextImageVideoProcessor from "../../../processors/textImageVideo.processor.js";
+import CarouselProcessor from "../../../processors/carosel.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
 import { data2 } from "../data/igs_lcms_li_bank_carousel.js";
 
@@ -10,7 +10,7 @@ describe("Text Image Video Worker 2", () => {
   it("should process all question items", async function () {
     const questionIds = data2;
 
-    const questionWorker = new TextImageVideoProcessor(questionIds);
+    const questionWorker = new CarouselProcessor(questionIds);
     const questionResults = await questionWorker.processAllItems();
 
     expect(questionResults.failed.length).toBe(

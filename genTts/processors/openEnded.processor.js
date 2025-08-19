@@ -1,11 +1,11 @@
 import { CONFIG } from "../config.js";
 import BaseProcessor from "./base.processor.js";
 
-class TextImageVideoProcessor extends BaseProcessor {
+class OpenEndedProcessor extends BaseProcessor {
   constructor(itemIds) {
     super(
-      "Learning Content - text-image-video",
-      "/learning-contents/text-image-video-edit",
+      "Content activities - open-ended",
+      "/content-activities/open-ended-edit",
       itemIds
     );
   }
@@ -100,8 +100,6 @@ class TextImageVideoProcessor extends BaseProcessor {
       timeout: CONFIG.timeouts.pageLoad,
       timeoutMsg: "Save button not enabled",
     });
-
-    await browser.pause(500);
     return saveBtn;
   }
 
@@ -126,4 +124,4 @@ class TextImageVideoProcessor extends BaseProcessor {
   }
 }
 
-export default TextImageVideoProcessor;
+export default OpenEndedProcessor;

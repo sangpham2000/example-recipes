@@ -1,8 +1,8 @@
-import CarouselProcessor from "../../../processors/carosel.processor.js";
+import OpenEndedProcessor from "../../../processors/openEnded.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
-import { data3 } from "../data/igs_lcms_li_bank_carousel.js";
+import { data3 } from "../data/igs_lcms_li_bank_open_ended.js";
 
-describe("Text Image Video Worker 3", () => {
+describe("Open-Ended Worker 3", () => {
   before(async () => {
     const base = new BaseProcessor();
     await base.login();
@@ -10,14 +10,14 @@ describe("Text Image Video Worker 3", () => {
   it("should process all question items", async function () {
     const questionIds = data3;
 
-    const questionWorker = new CarouselProcessor(questionIds);
+    const questionWorker = new OpenEndedProcessor(questionIds);
     const questionResults = await questionWorker.processAllItems();
 
     expect(questionResults.failed.length).toBe(
       0,
       `Question test failed with ${questionResults.failed.length} items.`
     );
-    console.log("🎉 Text Image Video worker processed successfully!");
+    console.log("🎉 Carousel worker processed successfully!");
   });
 
   afterEach(async function () {
