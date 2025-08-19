@@ -79,6 +79,10 @@ class Matching2Processor extends BaseProcessor {
    */
   async saveItem(questionId) {
     console.log("💾 Saving item...");
+    const next1 = await this.waitForNextButton();
+    await next1.click();
+    const next2 = await this.waitForNextButton();
+    await next2.click();
     const saveBtn = await this.waitForSaveButton();
     await saveBtn.click();
     await this.handleConfirmationDialog();
@@ -102,6 +106,23 @@ class Matching2Processor extends BaseProcessor {
     });
 
     await browser.pause(500);
+    return saveBtn;
+  }
+
+  async waitForNextButton() {
+    const saveBtn = await $("button=Next");
+
+    await saveBtn.waitForExist({
+      timeout: CONFIG.timeouts.pageLoad,
+      timeoutMsg: "Next button not found",
+    });
+
+    await saveBtn.waitForEnabled({
+      timeout: CONFIG.timeouts.pageLoad,
+      timeoutMsg: "Next button not enabled",
+    });
+
+    await browser.pause(100);
     return saveBtn;
   }
 
