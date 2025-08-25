@@ -1,15 +1,15 @@
 import McqProcessor from "../../../processors/mcq.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
-import { data2 } from "../data/igs_lcms_li_bank_mcq1.js";
+import { data4 } from "../data/igs_lcms_li_bank_mcq1.js";
 
-describe("Mcq Worker2", () => {
+describe("Mcq Worker 4", () => {
   before(async () => {
     const base = new BaseProcessor();
     await base.login();
     console.log("✅ Login successful for Question Worker");
   });
   it("should process all question items", async function () {
-    const questionIds = data2;
+    const questionIds = data4;
 
     const questionWorker = new McqProcessor(questionIds);
     const questionResults = await questionWorker.processAllItems();
@@ -18,7 +18,7 @@ describe("Mcq Worker2", () => {
       0,
       `Question test failed with ${questionResults.failed.length} items.`
     );
-    console.log("🎉 Mcq worker12 completed successfully!");
+    console.log("🎉 Mcq worker 4 completed successfully!");
   });
 
   afterEach(async function () {
