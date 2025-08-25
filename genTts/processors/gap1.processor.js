@@ -105,18 +105,20 @@ class Gap1Processor extends BaseProcessor {
    * Handle the confirmation dialog after clicking save
    */
   async handleConfirmationDialog() {
-    const confirmationDialog = await $("[role='dialog']");
-    await confirmationDialog.waitForDisplayed({
-      timeout: CONFIG.timeouts.elementWait,
-      timeoutMsg: "Confirmation dialog did not appear after clicking Save",
-    });
+    try {
+      const confirmationDialog = await $("[role='dialog']");
+      await confirmationDialog.waitForDisplayed({
+        timeout: CONFIG.timeouts.elementWait,
+        timeoutMsg: "Confirmation dialog did not appear after clicking Save",
+      });
 
-    const yesBtn = await $("button=yes");
-    await yesBtn.waitForDisplayed({
-      timeout: CONFIG.timeouts.elementWait,
-      timeoutMsg: "Yes button not found in confirmation dialog",
-    });
-    await yesBtn.click();
+      const yesBtn = await $("button=yes");
+      await yesBtn.waitForDisplayed({
+        timeout: CONFIG.timeouts.elementWait,
+        timeoutMsg: "Yes button not found in confirmation dialog",
+      });
+      await yesBtn.click();
+    } catch {}
   }
 }
 
