@@ -1,6 +1,6 @@
 import McqProcessor from "../../../processors/mcq.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
-import { data1 } from "../data/igs_lcms_li_bank_mcq.js";
+import { data1 } from "../data/igs_lcms_li_bank_mcq1.js";
 
 describe("Mcq Worker1", () => {
   before(async () => {
