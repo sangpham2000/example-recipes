@@ -1,6 +1,6 @@
 import ReadingTextHybrid from "../../../processors/reading-text-hybrid.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
-import { data1 } from "../data/igs_lcms_li_bank_mcq1.js";
+import { data1 } from "../data/igs_lcms_li_bank_reading_text_hybrid.js";
 
 describe("Rth Worker1", () => {
   before(async () => {
