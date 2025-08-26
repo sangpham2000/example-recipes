@@ -28,7 +28,8 @@ export const config = {
     // "./genTts/tests/specs/text-image-video/**/*.spec.js",
     // "./genTts/tests/specs/open-ended/**/*.spec.js",
     // "./genTts/tests/specs/gap1/**/*.spec.js",
-    "./genTts/tests/specs/mcq/**/*.spec.js",
+    "./genTts/tests/specs/matching2/**/*.spec.js",
+    "./genTts/tests/specs/rth/**/*.spec.js",
   ],
   // Patterns to exclude.
   exclude: [
