@@ -1,4 +1,4 @@
-import Matching1Processor from "../../../processors/matching1.processor.js";
+import Matching1Processor from "../../../processors/macthing1.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
 import { data1 } from "../data/igs_lcms_li_bank_matching1.js";
 
