@@ -5,7 +5,7 @@ class PronunciationRecordProcessor extends BaseProcessor {
   constructor(itemIds) {
     super(
       "Content activities - pronunciation-record",
-      "/content-activities/pronunciation-record-list",
+      "/content-activities/pronunciation-record-edit",
       itemIds
     );
   }

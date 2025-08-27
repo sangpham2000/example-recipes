@@ -1,4 +1,4 @@
-import PronunciationRecordProcessor from "../../../processors/matching1.processor.js";
+import PronunciationRecordProcessor from "../../../processors/pronunciation_record.processor.js";
 import BaseProcessor from "../../../processors/base.processor.js";
 import { data2 } from "../data/igs_lcms_li_bank_pronunciation_record.js";
 
