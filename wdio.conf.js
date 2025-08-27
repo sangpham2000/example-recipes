@@ -28,8 +28,11 @@ export const config = {
     // "./genTts/tests/specs/text-image-video/**/*.spec.js",
     // "./genTts/tests/specs/open-ended/**/*.spec.js",
     // "./genTts/tests/specs/gap1/**/*.spec.js",
-    "./genTts/tests/specs/matching2/**/*.spec.js",
-    "./genTts/tests/specs/rth/**/*.spec.js",
+    // "./genTts/tests/specs/matching2/**/*.spec.js",
+    // "./genTts/tests/specs/rth/**/*.spec.js",
+    "./genTts/tests/specs/reading-text-tooltip/**/*.spec.js",
+    "./genTts/tests/specs/matching1/**/*.spec.js",
+    "./genTts/tests/specs/pronunciation-record/**/*.spec.js",
   ],
   // Patterns to exclude.
   exclude: [
@@ -51,7 +54,7 @@ export const config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 20,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -59,7 +62,7 @@ export const config = {
   //
   capabilities: [
     {
-      maxInstances: 10,
+      maxInstances: 20,
       browserName: "chrome",
       acceptInsecureCerts: true,
       "goog:chromeOptions": {
