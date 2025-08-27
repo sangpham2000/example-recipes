@@ -24,11 +24,12 @@ export const config = {
   //
   specs: [
     // './**/*.js',
-    "./genTts/tests/specs/carousel/**/*.spec.js",
+    // "./genTts/tests/specs/carousel/**/*.spec.js",
     // "./genTts/tests/specs/mcq/**/*.spec.js",
     // "./genTts/tests/specs/text-image-video/**/*.spec.js",
     // "./genTts/tests/specs/open-ended/**/*.spec.js",
     // "./genTts/tests/specs/gap1/**/*.spec.js",
+    "./genTts/tests/specs/gap2/**/*.spec.js",
     // "./genTts/tests/specs/matching2/**/*.spec.js",
     // "./genTts/tests/specs/rth/**/*.spec.js",
     // "./genTts/tests/specs/reading-text-tooltip/**/*.spec.js",
