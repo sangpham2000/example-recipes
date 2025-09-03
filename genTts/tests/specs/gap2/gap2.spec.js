@@ -17,7 +17,7 @@ describe("Gap2 Worker 1", () => {
       0,
       `Question test failed with ${questionResults.failed.length} items.`
     );
-    console.log("🎉 Carousel worker processed successfully!");
+    console.log("🎉 Gap2 Worker 1 processed successfully!");
   });
 
   afterEach(async function () {

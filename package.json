@@ -64,7 +64,7 @@
     "timezone": "node ./timezone/custom-timezones.js",
     "waitForDisplayed": "cross-env EXAMPLE_RECIPE=waitForDisplayed wdio run ./wdio.conf.js --spec ./waitForDisplayed/waitForDisplayedExample.js",
     "waitUntil": "cross-env EXAMPLE_RECIPE=waitUntil wdio run ./wdio.conf.js --spec ./waitUntil/waitUntilExample.js",
-    "genTTS": "cross-env EXAMPLE_RECIPE=waitUntil wdio run ./wdio.conf.js --spec ./genTts/test/automation.e2e.js"
+    "genTTS": "cross-env EXAMPLE_RECIPE=waitUntil wdio run ./wdio.conf.js --spec ./genTts/tests/specs/mcq/mcq1.spec.js"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
