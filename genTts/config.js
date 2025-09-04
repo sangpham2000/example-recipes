@@ -1,5 +1,5 @@
 export const CONFIG = {
-  baseUrl: "https://lcms.ivyglobalschool.org/",
+  baseUrl: "https://lcms.ivyglobalschool.org",
   credentials: {
     username: "bo.teacher1",
     password: "12345678",
