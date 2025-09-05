@@ -28,14 +28,14 @@ export const config = {
     // "./genTts/tests/specs/gap1/**/*.spec.js", //Done
     // "./genTts/tests/specs/gap2/**/*.spec.js", //Done
     // "./genTts/tests/specs/matching1/**/*.spec.js", //Done 
-    "./genTts/tests/specs/matching2/**/*.spec.js",
+    // "./genTts/tests/specs/matching2/**/*.spec.js", //Done
     // "./genTts/tests/specs/matching3/**/*.spec.js", //Done
-    "./genTts/tests/specs/mcq/**/*.spec.js",
-    // "./genTts/tests/specs/open-ended/**/*.spec.js",
+    // "./genTts/tests/specs/mcq/**/*.spec.js", //Done
+    "./genTts/tests/specs/open-ended/**/*.spec.js",
     // "./genTts/tests/specs/pronunciation-record/**/*.spec.js", //Done
     // "./genTts/tests/specs/rth/**/*.spec.js", //Done
-    // "./genTts/tests/specs/reading-text-tooltip/**/*.spec.js",
-    // "./genTts/tests/specs/text-image-video/**/*.spec.js",
+    "./genTts/tests/specs/reading-text-tooltip/**/*.spec.js",
+    // "./genTts/tests/specs/text-image-video/**/*.spec.js", //Done
   ],
   // Patterns to exclude.
   exclude: [
